@@ -23,8 +23,8 @@ class view extends config{
             echo "<td>$data[item]</td>";
             echo "
                 <td>
-                    <a class='btn btn-info btn-sm' href='#'>Mark as completed</a>
-                    <a class='btn btn-danger btn-sm' href='#'>Delete task</a>
+                    <a class='btn btn-info btn-sm' href='index.php?edit=$data[id]'>Mark as completed</a>
+                    <a class='btn btn-danger btn-sm' href='index.php?delete=$data[id]'>Delete task</a>
                 </td>
                 ";
             echo "</tr>";
