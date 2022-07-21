@@ -19,9 +19,7 @@ require_once 'php/init.php';
         <a class="navbar-brand" href="#">TODO LIST</a>
     </nav>
     <div class="container mt-5">
-      <?php
-      insertTask();
-      ?>
+      <?php waiter(); ?>
       <form action="" method="GET">
         <div class="row">
           <div class="col-md-9 form-group">
@@ -33,11 +31,7 @@ require_once 'php/init.php';
         </div>
       </form>
 
-      <?php
-      $view = new view();
-      $view->viewData();
-      $view->viewCompletedData();
-      ?>
+      <?php viewTable();?>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
